@@ -10,14 +10,14 @@ INTERFACE			|fern-renderer-devicons-interface|
 
 
 =============================================================================
-INTRODUCTION						*fern-introduction*
+INTRODUCTION				*fern-renderer-devicons-introduction*
 
 *fern-renderer-devicons.vim* is a |fern.vim| plugin which add devicons
 support.
 
 
 =============================================================================
-USAGE							*fern-usage*
+USAGE					*fern-renderer-devicons-usage*
 
 Install https://github.com/ryanoasis/vim-devicons and set "devicons" to
 |g:fern#renderer| like:
@@ -26,10 +26,10 @@ Install https://github.com/ryanoasis/vim-devicons and set "devicons" to
 <
 
 =============================================================================
-INTERFACE						*fern-interface*
+INTERFACE				*fern-renderer-devicons-interface*
 
 -----------------------------------------------------------------------------
-VARIABLE						*fern-variable*
+VARIABLE				*fern-renderer-devicons-variable*
 
 *g:fern#renderer#devicons#leading*
 	A |String| which is prepended to each node to indicates the nested
