@@ -1,0 +1,75 @@
+*fern-renderer-devicons.txt*		fern plugin to render devicons
+
+=============================================================================
+CONTENTS				*fern-renderer-devicons-contents*
+
+INTRODUCTION			|fern-renderer-devicons-introduction|
+USAGE				|fern-renderer-devicons-usage|
+INTERFACE			|fern-renderer-devicons-interface|
+  VARIABLE			|fern-renderer-devicons-variable|
+
+
+=============================================================================
+INTRODUCTION						*fern-introduction*
+
+*fern-renderer-devicons.vim* is a |fern.vim| plugin which add devicons
+support.
+
+
+=============================================================================
+USAGE							*fern-usage*
+
+Install https://github.com/ryanoasis/vim-devicons and set "devicons" to
+|g:fern#renderer| like:
+>
+	let g:fern#renderer = "devicons"
+<
+
+=============================================================================
+INTERFACE						*fern-interface*
+
+-----------------------------------------------------------------------------
+VARIABLE						*fern-variable*
+
+*g:fern#renderer#devicons#leading*
+	A |String| which is prepended to each node to indicates the nested
+	level of the node.
+
+	For example, when the value is "~~", the renderer output become:
+>
+	  root
+	  |- deep
+	  ~~|- alpha
+	  ~~~~|- beta
+	  ~~~~~~|  gamma
+<
+	Default: " "
+
+*g:fern#renderer#devicons#marked_symbol*
+	A |String| which is prepended to marked nodes.
+
+	For example, when the value is "--> ", the renderer output become:
+>
+	--> root
+	  |- shallow
+	--> |+ alpha
+	   |- beta
+	--> |  gamma
+<
+	Default: "✓  "
+
+*g:fern#renderer#devicons#unmarked_symbol*
+	A |String| which is prepended to nodes which is not marked.
+
+	For example, when the value is "--> ", the renderer output become:
+>
+	* root
+	--> |- shallow
+	* |+ alpha
+	--> |- beta
+	* |  gamma
+<
+	Default: "   "
+
+=============================================================================
+vim:tw=78:fo=tcq2mM:ts=8:ft=help:norl
