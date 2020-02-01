@@ -8,7 +8,7 @@
 
 ## Requreiments
 
-- [ryanoasis/vim-devicons](https://github.com/ryanosis/vim-devicons)
+- [ryanoasis/vim-devicons](https://github.com/ryanoasis/vim-devicons)
 - Patched font
   - [Nerd Fonts](https://www.nerdfonts.com/)
   - [Cica](https://github.com/miiton/Cica)
