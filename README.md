@@ -4,7 +4,7 @@
 
 ![Screenshot](https://user-images.githubusercontent.com/546312/73591466-0b63e980-4532-11ea-89a6-c289455b4168.png)
 
-[fern.vim](https://github.com/lambdalisue/fern) plugin which add file type icons through [ryanoasis/vim-devicons](https://github.com/ryanosis/vim-devicons).
+[fern.vim](https://github.com/lambdalisue/fern) plugin which add file type icons through [ryanoasis/vim-devicons](https://github.com/ryanoasis/vim-devicons).
 
 ## Requreiments
 
