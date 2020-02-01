@@ -14,3 +14,10 @@
   - [Cica](https://github.com/miiton/Cica)
   - [Others](https://github.com/ryanoasis/nerd-fonts#patched-fonts)
 
+## Usage
+
+Set `"devicons"` to `g:fern#renderer` like:
+
+```vim
+let g:fern#renderer = "devicons"
+```
