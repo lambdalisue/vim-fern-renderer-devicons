@@ -4,8 +4,8 @@ let s:PATTERN = '^$~.*[]\'
 let s:Config = vital#fern#import('Config')
 let s:AsyncLambda = vital#fern#import('Async.Lambda')
 
-let s:STATUS_NONE = g:fern#internal#node#STATUS_NONE
-let s:STATUS_COLLAPSED = g:fern#internal#node#STATUS_COLLAPSED
+let s:STATUS_NONE = g:fern#STATUS_NONE
+let s:STATUS_COLLAPSED = g:fern#STATUS_COLLAPSED
 
 function! fern#renderer#devicons#new() abort
   let default = fern#renderer#default#new()
