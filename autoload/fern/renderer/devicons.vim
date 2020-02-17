@@ -26,7 +26,7 @@ function! s:render(nodes, marks) abort
         \ 'unmarked_symbol': g:fern#renderer#devicons#unmarked_symbol,
         \}
   let base = len(a:nodes[0].__key)
-  let Profile = fern#profile#start("fern#renderer#devicons#s:render")
+  let Profile = fern#profile#start('fern#renderer#devicons#s:render')
   return s:AsyncLambda.map(copy(a:nodes), { v, -> s:render_node(v, a:marks, base, options) })
         \.finally({ -> Profile() })
 endfunction
@@ -48,7 +48,8 @@ function! s:render_node(node, marks, base, options) abort
         \ : a:options.marked_symbol
   let level = len(a:node.__key) - a:base
   if level is# 0
-    return prefix . a:node.label . '/'
+    let suffix = a:node.label =~# '/$' ? '' : '/'
+    return prefix . a:node.label . suffix
   endif
   let leading = repeat(a:options.leading, level - 1)
   let symbol = s:get_node_symbol(a:node)
