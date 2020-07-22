@@ -75,8 +75,11 @@ VARIABLE				*fern-renderer-devicons-variable*
 -----------------------------------------------------------------------------
 COLORS				*fern-renderer-devicons-colors*
 
-You can specify colors manually by just defining syntax for fern buffer.
-See examples at https://github.com/ryanoasis/vim-devicons/issues/158.
+Unfortunately vim-devicons does not provide an API for this. But you can
+specify colors manually by just defining syntax for fern buffer.
+See example https://github.com/ryanoasis/vim-devicons/issues/158#issue-166035270 or
+https://github.com/ryanoasis/vim-devicons/issues/158#issuecomment-643139346 or
+https://github.com/ryanoasis/vim-devicons/issues/158#issuecomment-661974266.
 
 =============================================================================
 vim:tw=78:fo=tcq2mM:ts=8:ft=help:norl
