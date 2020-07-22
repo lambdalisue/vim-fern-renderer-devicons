@@ -32,9 +32,8 @@ function! s:render(nodes, marks) abort
 endfunction
 
 function! s:syntax() abort
-  syntax clear
-  syntax match FernLeaf   /^\s*[^ ]\+/
-  syntax match FernBranch /^\s*.*\/$/
+  syntax match FernLeaf  /^\s*[^\x00-\x7F]/ nextgroup=FernBranch
+  syntax match FernBranch /\s*.*\/$/ contained
   syntax match FernRoot   /\%1l.*/
   execute printf(
         \ 'syntax match FernMarked /^%s.*/',
