@@ -21,3 +21,7 @@ Set `"devicons"` to `g:fern#renderer` like:
 ```vim
 let g:fern#renderer = "devicons"
 ```
+
+## See also
+
+- [lambdalisue/fern-renderer-nerdfont.vim](https://github.com/lambdalisue/fern-renderer-nerdfont.vim)
